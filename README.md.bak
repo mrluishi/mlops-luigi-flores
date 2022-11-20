@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+# mlops-luigi-flores
+ Repositorio del curso ML de UP
+=======
 # Nombre del REPO: mlops-webapp-up
 
 Web predict diabetes using api in azure
@@ -16,3 +20,4 @@ Datos para test:
 Comando para hacer push con token:
 git push https://<token>@github.com/<nombre-usuario>/<nombre-repo>
 git push https://<token>@github.com/joenvihe/mlops-webapp-up.git
+>>>>>>> aaca005e51b5acbd732415a5f541752e34ab2d7a

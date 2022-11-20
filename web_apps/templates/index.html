@@ -1,0 +1,39 @@
+<html>
+
+  <title>Analisis de Diabetes</title>
+  <head>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <h3>Analisis de Diabetes</h3>
+      <h2 class="active"> Ingrese los detalles </h2>
+  
+      <!-- Login Form -->
+      <form action= "{{ url_for('GetValues')}}" method="post">
+
+        <input required type="number" id="pregnancies" class="fadeIn second" name="pregnancies"" placeholder="Pregnancies">
+        <input required type="number" id="plasmaglucose" class="fadeIn second" name="plasmaglucose" placeholder="PlasmaGlucose">
+        <input required type="number" id="diastolicbloodpressure" class="fadeIn second" name="diastolicbloodpressure" placeholder="DiastolicBloodPressure">
+        <input required type="number" id="tricepsthickness" class="fadeIn second" name="tricepsthickness" placeholder="TricepsThickness">
+        <input required type="number" id="seruminsulin" class="fadeIn second" name="seruminsulin" placeholder="SerumInsulin">
+        <input required type="number" step="any" id="bmi" class="fadeIn second" name="bmi" placeholder="BMI">
+        <input required type="number" step="any" id="diabetespedigree" class="fadeIn second" name="diabetespedigree" placeholder="DiabetesPedigree">
+        <input required type="number" id="age" class="fadeIn second" name="age" placeholder="age">
+
+        <input required type="submit" class="fadeIn fourth" value="Predict">
+       
+      </form>
+  
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        
+        <h4 class = "underlineHover">{{ prediction_text }}</h4>
+      </div>
+  
+    </div>
+  </div>
+
+</html>
